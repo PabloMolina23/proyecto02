@@ -35,6 +35,13 @@ body{
     margin:0px !important;
 }
 
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color:var(--color-one);
+    color: var(--color-two);
+    margin-top:200px;
+}
 .main-header{
     margin: 0%;
     display: flex;
@@ -149,11 +156,19 @@ body{
     object-fit: cover;
     animation: fadeIn 5s ease-in-out; /* Aplicar la animación */
 }
+
+.product-image{
+    width: 100%;
+    max-height:50vh ;
+    object-fit: cover;
+    animation: fadeIn 5s ease-in-out; 
+
+}
 .container-text{
     width: 50%;
     /*margin-right: 40px;*/
     margin: 20px 20px;
-    text-align: center; /*preguntar poque icono no text align center
+    text-align: center; /*preguntar poque icono no text align center*/
 }
 
 
@@ -175,11 +190,35 @@ body{
   padding: 2rem;
 }
 
+.border-radius-darkblue{
+    border: 2px solid var(--color-one-white-50); 
+    border-radius: 10px; 
+    padding: 2rem;
+  }
+  
 .icono{
     max-width: 20%;
     
 }
 
 .products{
+    margin: 20px 20px;  /*crear clase para margin?*/
+}
+
+.product-offers{
     margin: 20px 20px;
+}
+
+.text-price{
+    /* background-color: #feef4e; */
+}
+
+
+.text-order{
+    width: 50%;
+
+}
+
+.order-image{
+
 }

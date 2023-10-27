@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="/style.css" />
     <title>Blue Fish</title>
 </head>
+<!----------- Inicio de body ------------->
 
 <body class="background_map">
-    <header class="main-header">
-        <div class="header-container">
-            <img class="header-imagen" src="/img/logo.png" />
-            <h1 class="header-titulo">Blue Fish</h1>
+    <!----------- Inicio de Header ------------->
 
-            <nav class="header-nav">
-                <a class="header-nav-element">Categorias</a>
-                <a class="header-nav-element">Contacto</a>
+    <header class="header">
+        <div class="header__container">
+            <img class="header__logo" src="/img/logo.png" />
+            <h1 class="header__titulo">Blue Fish</h1>
+
+            <nav class="header__nav">
+                <a class="header__nav-element">Categorias</a>
+                <a class="header__nav-element">Contacto</a>
 
 
             </nav>
@@ -25,17 +28,20 @@
     </header>
 
     <div class="main-image">
-        <img class="mainbanner-image" src="/Img/mainimagen.jpg" />
+        <img class="main-image__banner" src="/Img/mainimagen.jpg" />
     </div>
 
+    <!----------- Fin de Header ------------->
+
+    <!----------- Section quienes somos ------------->
 
     <section class="section-who flex-column">
-        <h2 class="text-title">Quienes somos</h2>
-        <div class="container-image-text flex-row-space-between color-one-10">
-            <div class="container-image">
-                <img class="container-image01" src="/Img/section-who/mediano.jpg" />
+        <h2>Quienes somos</h2>
+        <div class="flex-row-space-between color-one-10">
+            <div class="section-who__container-image">
+                <img class="section-who__container-image__image01" src="/Img/section-who/mediano.jpg" />
             </div>
-            <div class="container-text">
+            <div class="section-who__container-text">
                 <h2>La excelencia de Blue Fish</h2>
                 <p>En Blue Fish, no solo nos enorgullece la frescura de nuestro pescado, sino también la excelencia que
                     brindamos a nuestros clientes. Nuestra pescadería se destaca por su atención personalizada y un
@@ -50,8 +56,8 @@
             </div>
         </div>
 
-        <div class="container-text-image flex-row-space-between ">
-            <div class="container-text">
+        <div class="color-two flex-row-space-between ">
+            <div class="section-who__container-text">
                 <h2>Nuestra conexión con el mar</h2>
                 <p>En Blue Fish, nos enorgullece presentarnos como una pescadería comprometida con la frescura y la
                     calidad de los productos del mar. Estamos ubicados en la pintoresca Caleta de Vélez, una joya
@@ -62,14 +68,18 @@
                     sabrosos lleguen a su mesa. Esta conexión directa con el mar y la dedicación de nuestros pescadores
                     son la base de nuestro compromiso con la calidad y la sostenibilidad.</p>
             </div>
-            <div class="container-image">
-                <img class="container-image01" src="/Img/section-who/palets-madera-puerto-pesquero.jpg" />
+            <div class="section-who__container-image">
+                <img class="section-who__container-image__image01" src="/Img/section-who/palets-madera-puerto-pesquero.jpg" />
             </div>
         </div>
     </section>
 
+    <!----------- fin Section quienes somos ------------->
+
+    <!----------- Inicio Section porque elegirnos ------------->
+
     <section class="section-why flex-column">
-        <h2 class="text-title">Porque elegirnos</h2>
+        <h2>Porque elegirnos</h2>
 
         <div class="flex-row-space-between">
             <div class="card-why border-radius-color-one container-text">
@@ -99,6 +109,12 @@
 
         </div>
     </section>
+    <!----------- Fin Section porque elegirnos ------------->
+
+
+
+    <!----------- Inicio sections de productos ------------->
+
     <section class="section-products flex-column">
         <h2 class="text-title">productos frescos del día</h2>
         <div class="flex-row-space-between">
@@ -176,6 +192,12 @@
 
 
     </section>
+
+    <!----------- Fin sections de productos ------------->
+
+
+
+     <!----------- Inicio sections de ofertas ------------->
     <section class="section-offers flex-column">
         <h2 class="text">ofertas del dia</h2>
         <div class="flex-row-space-between">
@@ -204,13 +226,16 @@
         </div>
 
     </section>
+    <!----------- Fin sections de ofertas ------------->
+    <!----------- Inicio sections de pedidos ------------->
+
     <section class="section-orders">
         <h2 class="text-title">pedidos</h2>
         <div class="flex-row-space-between">
 
 
             <div class="product-orders">
-                
+
                 <img class="order-image" src="Img/doradalimon.jpg" />
                 <h4 class="text text-order">¡Déjate seducir por la frescura y el sabor inigualable de nuestra Dorada al
                     Limón! En cada bocado, experimentarás una explosión de sabores que te transportará directamente a la
@@ -218,51 +243,64 @@
             </div>
 
             <div class="product-orders">
-                <img class="order-image" src="Img/primer-plano-deliciosos-espetos-tipicos-espanoles-sardinas.jpg" />
+                <img class="order-image"
+                    src="Img/section-orders/primer-plano-deliciosos-espetos-tipicos-espanoles-sardinas.jpg" />
                 <h4 class="text text-order">pescado</h4>
 
             </div>
     </section>
+
+    <!----------- Fin sections de pedidos------------->
+    <!----------- Inicio sections de contacto------------->
+ 
     <section class="section-contact border-radius-color-one-white-50">
 
         <div class="flex-row-space-between">
-        <div class="text-contact">
-            <h2>Contáctenos</h2>
-            <p>Nuestra dirección es:</p>
-            <p>Calle de los Pescados,</p>
-            <p>telefono:123-456-7890</p>
+            <div class="text-contact">
+                <h2>Contáctenos</h2>
+                <p>Nuestra dirección es:</p>
+                <p>Calle de los Pescados,</p>
+                <p>telefono:123-456-7890</p>
 
-            <img class="contact-image" src="Img/section-contact/facebook.png" />
-            <img class="contact-image" src="Img/section-contact/instagram.png" />
-            <img class="contact-image" src="Img/section-contact/whatsapp.png" />
-
-
-        </div>
+                <img class="contact-image" src="Img/section-contact/facebook.png" />
+                <img class="contact-image" src="Img/section-contact/instagram.png" />
+                <img class="contact-image" src="Img/section-contact/whatsapp.png" />
 
 
-        <div class="text-contact">
-            <form>
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12006.175188383926!2d-4.073961924065276!3d36.752150294019614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd723815699714d9%3A0x536677cf5c9a64d5!2zQ2FsZXRhIGRlIFbDqWxleiwgTcOhbGFnYQ!5e0!3m2!1ses!2ses!4v1698392300705!5m2!1ses!2ses" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
-              </form>
-              
-            
+            </div>
+
+
+            <div class="text-contact">
+                <form>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12006.175188383926!2d-4.073961924065276!3d36.752150294019614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd723815699714d9%3A0x536677cf5c9a64d5!2zQ2FsZXRhIGRlIFbDqWxleiwgTcOhbGFnYQ!5e0!3m2!1ses!2ses!4v1698392300705!5m2!1ses!2ses"
+                        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </form>
 
 
 
 
-        </div>
+
+
+            </div>
 
         </div>
 
     </section>
+
+        <!----------- Fin sections de pedidos ------------->
+        <!----------- Inicio footer------------->
+
     <footer>
         <p>Calle de los Pescados, No. 123, Colonia del Mar, Ciudad de Pescaville, Estado Pesquería, País Pescolandia.
         </p>+
         <p>2023 El Rincón de la Bendición | Todos los derechos divinos reservados</p>
 
     </footer>
+         <!----------- fin footer------------->
 
 
 </body>
@@ -273,5 +311,3 @@
 
 
 </html>
-
-

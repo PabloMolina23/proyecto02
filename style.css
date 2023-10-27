@@ -32,6 +32,26 @@
   --color-three-white-75: color-mix(in srgb, var(--color-three) 75%, white);
 }
 /*General ////////////////////////////////////*/
+
+body {
+  margin: 0px !important;
+  /*background-image: url("Img/pescadoFondo.png");*/
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: var(--color-one);
+  color: var(--color-two);
+  margin-top: 200px;
+}
+
+h2{
+  /* aqui van los titulos de secciones */
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 150px;
+}
 .color-one-10 {
   color: black;
   background-color: var(--color-one-white-10);
@@ -41,6 +61,10 @@
   background-color: var(--color-three-white-25);
 }
 
+.color-two{
+  color:black;
+  background-color: var(--color-two);
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -56,18 +80,7 @@
   gap: 2rem;
   justify-content: space-between;
 }
-body {
-  margin: 0px !important;
-  /*background-image: url("Img/pescadoFondo.png");*/
-}
 
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: var(--color-one);
-  color: var(--color-two);
-  margin-top: 200px;
-}
 
 .border-radius-color-one {
   border: 2px solid var(--color-one);
@@ -82,7 +95,15 @@ footer {
 }
 
 /*Fin de general/////*/
-.main-header {
+
+
+.text {
+  text-align: center;
+}
+
+
+/* ----------HEADER BLUE FISH---------- */
+.header {
   margin: 0%;
   display: flex;
   flex-direction: row;
@@ -90,36 +111,51 @@ footer {
   align-items: center;
   background-color: var(--color-one);
 }
-.header-imagen {
-  max-width: 8%;
-}
 
-.header-container {
+.header__container {
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.header-titulo {
+
+.header__logo {
+  max-width: 8%;
+}
+
+
+.header__titulo {
   color: var(--color-two);
   font-size: xxx-large;
 }
-.header-nav {
+.header__nav {
   display: flex;
   flex-direction: row;
   gap: 2rem; /* rem  mejor que px */
   color: var(--color-two);
   font-size: small;
 }
-.header-nav-element {
+.header__nav-element {
   /*    cursor: pointer;*/
 }
-.header-texto {
-  color: var(--color-two);
+
+
+
+.main-image__banner {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover; /* Esto sirve para redimensionar la imagen, usando el minimo o el maximo*/
+  animation: fadeIn 2s ease-in-out; /* Aplicar la animación */
 }
 
-.body-general-info {
+/* ----------FIN HEADER BLUE FISH---------- */
+
+/* .header-texto {
+  color: var(--color-two);
+} */
+
+/* .body-general-info {
   background-image: url("./Img/pescadoFondo.png");
   position: relative;
   min-height: 461px;
@@ -127,41 +163,48 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+
+/* ----------Inicio Section who---------- */
+
+.section-who {
+  /*esta definida el flex column*/
 }
 
-.mainbanner-image {
-  width: 100%;
-  max-height: 50vh;
-  object-fit: cover; /* Esto sirve para redimensionar la imagen, usando el minimo o el maximo*/
-  animation: fadeIn 2s ease-in-out; /* Aplicar la animación */
-}
 
-.text {
-  text-align: center;
-}
-.text-title {
-  text-align: center;
-  font-size: xx-large;
-  margin-bottom: 150px;
-}
-.container-image-text {
-  /*el flex ya esta definido*/
-}
-.container-text-image {
+
+.section-who__container-text-image {
   background-color: var(--color-two);
 }
-.container-image {
+.section-who__container-image {
   width: 100%;
   /*margin-left: 40px;*/
   margin: 20px 20px;
 }
 
-.container-image01 {
+.section-who__container-image__image01 {
   width: 100%;
   max-height: 50vh;
   object-fit: cover;
   animation: fadeIn 5s ease-in-out; /* Aplicar la animación */
 }
+
+.section-who__container-text {
+  width: 100%;
+  /*margin-right: 40px;*/
+  margin: 20px 20px;
+  text-align: center; /*preguntar poque icono no text align center*/
+}
+
+/* ---------Fin Section who---------- */
+
+
+/* ----------Inicio porque elegirnos--------- */
+
+
+/* ----------Fin porque elegirnos--------- */
+/* ----------Inicio productos--------- */
 
 .product-image {
   max-width: 100%;
@@ -169,16 +212,7 @@ footer {
   object-fit: cover;
   animation: fadeIn 5s ease-in-out;
 }
-.container-text {
-  width: 100%;
-  /*margin-right: 40px;*/
-  margin: 20px 20px;
-  text-align: center; /*preguntar poque icono no text align center*/
-}
 
-.section-who {
-  /*esta definida el flex column*/
-}
 
 .section-why {
   /*esta definido el flex column*/

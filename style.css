@@ -31,7 +31,7 @@
   --color-three-white-50: color-mix(in srgb, var(--color-three) 50%, white);
   --color-three-white-75: color-mix(in srgb, var(--color-three) 75%, white);
 }
-
+/*General ////////////////////////////////////*/
 .color-one-10 {
   color: black;
   background-color: var(--color-one-white-10);
@@ -68,6 +68,20 @@ footer {
   color: var(--color-two);
   margin-top: 200px;
 }
+
+.border-radius-color-one {
+  border: 2px solid var(--color-one);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.border-radius-color-one-white-50 {
+  border: 2px solid var(--color-one-white-50);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+/*Fin de general/////*/
 .main-header {
   margin: 0%;
   display: flex;
@@ -170,18 +184,11 @@ footer {
   /*esta definido el flex column*/
   background-color: var(--color-one-white-10);
 }
+.section-orders{
 
-.border-radius-color-one {
-  border: 2px solid var(--color-one);
-  border-radius: 10px;
-  padding: 2rem;
+  /*Esta definido*/
 }
 
-.border-radius-color-one-white-50 {
-  border: 2px solid var(--color-one-white-50);
-  border-radius: 10px;
-  padding: 2rem;
-}
 
 .icono {
   max-width: 20%;
@@ -210,6 +217,7 @@ footer {
 
 .order-image {
   max-width: 100%;
+  
 }
 .product-orders {
   width: 100%;
@@ -226,7 +234,10 @@ footer {
     margin-right: 2px;
 }
 
-
+.card-why:hover{
+  background-color: var(--color-one) ;
+  color : white;
+}
 
 /* .background_map {
   background-color: #b7c7eb;

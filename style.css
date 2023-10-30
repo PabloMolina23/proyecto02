@@ -80,6 +80,7 @@ h2 {
   flex-direction: row;
   gap: 2rem;
   justify-content: space-between;
+  padding: 20px 0px;
   
 
 }
@@ -161,6 +162,8 @@ h2 {
   width: 100%;
   /*margin-left: 40px;*/
   margin: 20px 20px;
+  display:flex;
+  align-items: center;
 }
 
 .section-who__container-image__image01 {
@@ -176,7 +179,12 @@ h2 {
   margin: 20px 20px;
   text-align: center;
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 150px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+
 }
 .section-who_icono{
 
@@ -186,7 +194,7 @@ h2 {
 
 .section-who__container-text__texto{
 text-align: justify;
-font-weight: bold; 
+/*font-weight: bold; */
 font-size: 1em; 
 
   
